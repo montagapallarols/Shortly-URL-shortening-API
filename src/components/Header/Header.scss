@@ -3,6 +3,7 @@
 .hero-container {
   display: flex;
   overflow: hidden;
+  margin-bottom: 200px;
   @include tablet {
     flex-direction: column;
     text-align: center;

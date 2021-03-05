@@ -1,0 +1,32 @@
+@import "../../assets/scss/main";
+
+.search-bar-container {
+  width: 80%;
+  position: absolute;
+  border-radius: 15px;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  background-color: $very-dark-blue;
+  border-radius: 15px;
+}
+
+.search-area {
+  position: absolute;
+  margin-top: 5.5%;
+  margin-left: 15%;
+
+  .search-bar {
+    border: none;
+    padding: 13px 300px 13px 29px;
+    border-radius: 5px;
+  }
+  button {
+    @extend %button-round;
+    padding: 13px 29px;
+    border-radius: 5px;
+  }
+}
