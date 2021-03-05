@@ -1,3 +1,13 @@
 @import "./colours";
 
-$margin-desktop: 70px;
+$margin-desktop: 120px;
+$margin-tablet: 25px;
+
+%button-round {
+  border: none;
+  padding: 8px 29px;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: $cyan;
+  color: white;
+}

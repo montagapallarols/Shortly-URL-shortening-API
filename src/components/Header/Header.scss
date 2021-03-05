@@ -1,0 +1,64 @@
+@import "../../assets/scss/main";
+
+.hero-container {
+  display: flex;
+  overflow: hidden;
+  @include tablet {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hero-image-top {
+  display: none;
+  @include tablet {
+    display: block;
+    margin: 0 -200px 80px 0;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+.hero-text {
+  flex: 0 0 50%;
+  margin-right: 90px;
+  padding-top: 37px;
+  padding-left: $margin-desktop;
+  @include tablet {
+    margin: 0;
+    padding: 0px $margin-tablet;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: $very-dark-blue;
+    @include mobile {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    color: $grayish-violet;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    @include mobile {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+  }
+  button {
+    @extend %button-round;
+    font-size: 20px;
+  }
+}
+
+.hero-image {
+  img {
+    height: 420px;
+  }
+  @include tablet {
+    display: none;
+  }
+}
