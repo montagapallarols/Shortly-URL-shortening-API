@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./assets/scss/main";
+
+.App {
+  font-family: "Poppins", sans-serif;
+  margin: 20px $margin-desktop;
+  @include tablet {
+    margin: 15px 15px;
+  }
+}
