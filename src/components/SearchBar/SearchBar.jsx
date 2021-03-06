@@ -13,6 +13,7 @@ export default function SearchBar() {
           type="text"
           placeholder="Shorten a link here..."
         />
+
         <button>Shorten It!</button>
       </div>
     </div>
