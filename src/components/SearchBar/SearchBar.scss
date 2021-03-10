@@ -1,18 +1,21 @@
 @import "../../assets/scss/main";
 
 .search-bar-container {
-  width: 80%;
-  position: absolute;
+  background: $very-dark-blue url("../../assets/images/bg-shorten-desktop.svg");
+  background-size: cover;
+  position: relative;
+  height: 170px;
+  width: calc(100% - 200px);
   border-radius: 15px;
-  top: 100%;
+  top: -90px;
   display: flex;
   flex-direction: column;
-}
-
-.background {
-  background-color: $very-dark-blue;
-  border-radius: 15px;
-  position: relative;
+  @include tablet {
+    background: $very-dark-blue url("../../assets/images/bg-shorten-mobile.svg")
+      top right no-repeat;
+    height: 200px;
+    width: calc(100% - 50px);
+  }
 }
 
 .search-area {
@@ -23,15 +26,32 @@
   transform: translate(-50%, -50%);
   width: 100%;
 
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    width: calc(100% - 55px);
+  }
+
   .search-bar {
     border: none;
-    padding: 13px 500px 13px 29px;
+    padding: 1.6% 40% 1.6% 2.7%;
     margin-right: 20px;
     border-radius: 5px;
+    @include tablet {
+      margin-right: 0;
+      padding: 20px 40px 20px 20px;
+    }
   }
   button {
-    @extend %button-round;
-    padding: 13px 29px;
+    border: none;
+    padding: 1.6% 2.7%;
+    font-weight: 700;
     border-radius: 5px;
+    background-color: $cyan;
+    color: white;
+    @include tablet {
+      padding: 20px 30px;
+    }
   }
 }
