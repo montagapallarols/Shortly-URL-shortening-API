@@ -8,20 +8,35 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
 }
 
 .body-text {
   padding: 200px 200px 50px;
+  @include tablet {
+    padding: 180px $margin-tablet;
+  }
 
   h2 {
     font-weight: 700;
     color: $very-dark-blue;
     font-size: 2.5rem;
+    @include mobile {
+      font-size: 1.8rem;
+    }
   }
 
   p {
     color: $grayish-violet;
     font-size: 1.2rem;
-    margin: 5% 18%;
+    max-width: 550px;
+    margin: 30px auto;
+    @include tablet {
+      max-width: 100%;
+    }
+    @include mobile {
+      font-size: 1rem;
+      line-height: 30px;
+    }
   }
 }
