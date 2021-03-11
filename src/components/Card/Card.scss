@@ -1,0 +1,38 @@
+@import "../../assets/scss/main";
+
+.card {
+  padding: 0px 27px 35px;
+}
+
+.card-icon-container {
+  border-radius: 50%;
+  background-color: $very-dark-blue;
+  height: 90px;
+  width: 90px;
+  margin-top: -50px;
+}
+
+.card-icon {
+  width: 50px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.card-title {
+  color: $very-dark-blue;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  text-align: left;
+  color: $grayish-violet;
+  line-height: $text-line-height;
+  //   font-size: 1rem;
+}

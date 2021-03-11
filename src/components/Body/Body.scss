@@ -1,6 +1,7 @@
 @import "../../assets/scss/main";
 
 .body-container {
+  padding: 200px $margin-desktop 500px;
   background-color: $lightest-violet;
   width: 100vw;
   height: 100vh;
@@ -8,11 +9,9 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  overflow: hidden;
 }
 
 .body-text {
-  padding: 200px 200px 50px;
   @include tablet {
     padding: 180px $margin-tablet;
   }
@@ -31,12 +30,18 @@
     font-size: 1.2rem;
     max-width: 550px;
     margin: 30px auto;
+    line-height: $text-line-height;
     @include tablet {
       max-width: 100%;
     }
     @include mobile {
       font-size: 1rem;
-      line-height: 30px;
     }
   }
+}
+
+.card-section {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
